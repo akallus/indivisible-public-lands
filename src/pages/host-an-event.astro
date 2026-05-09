@@ -47,6 +47,23 @@ import Footer from '../components/Footer.astro';
     </div>
   </section>
 
+  <!-- Bingo Card Preview -->
+  <section class="bg-navy py-16">
+    <div class="max-w-3xl mx-auto px-6">
+      <p class="section-label text-center">Preview</p>
+      <h2 class="text-2xl font-black text-white text-center mb-8">The Bingo Card</h2>
+      <iframe
+        src="/downloads/Democracy_on_Draft_Bingo_Card.pdf"
+        class="w-full rounded-xl border border-white/10"
+        style="height: 700px;"
+        title="Democracy on Draft Bingo Card Preview"
+      ></iframe>
+      <div class="text-center mt-6">
+        <a href="/downloads/Democracy_on_Draft_Bingo_Card.pdf" download class="btn-primary">Download PDF &darr;</a>
+      </div>
+    </div>
+  </section>
+
   <!-- Online Action Resources -->
   <section class="bg-navy py-20">
     <div class="max-w-6xl mx-auto px-6">
@@ -232,38 +249,133 @@ import Footer from '../components/Footer.astro';
       <p class="text-slate-300 mb-10">Replace all <strong class="text-white">[BRACKETS]</strong> with your event details before posting. Mix and match hashtags — use 3–5 per post.</p>
 
       <div class="space-y-6">
-        <div class="card">
-          <div class="flex justify-between items-center mb-3">
-            <span class="text-xs font-bold uppercase tracking-widest text-sky-bright">Save the Date — Playful</span>
-            <span class="text-slate-500 text-xs">3 weeks out</span>
+
+        <!-- Post 1 -->
+        <div class="post-card rounded-xl overflow-hidden border border-white/10" style="background: #1C2333;">
+          <div class="flex items-center gap-3 px-4 pt-4 pb-3 border-b border-white/5">
+            <div class="w-9 h-9 bg-navy-brand rounded-full flex items-center justify-center text-sky-bright font-black text-xs shrink-0">YCN</div>
+            <div class="flex-1">
+              <p class="text-white text-sm font-bold leading-tight">Your Chapter Name</p>
+              <p class="text-slate-500 text-xs">3 weeks before your event · 🌐</p>
+            </div>
+            <span class="text-xs text-sky-bright font-bold uppercase tracking-wide bg-navy px-3 py-1 rounded-full">Save the Date</span>
           </div>
-          <p class="text-slate-300 text-sm leading-relaxed">🍺 New month, new chance to make some calls.<br /><br />Democracy on Draft is back at [VENUE] on [DATE] at [TIME]. Grab a beer, make a few calls to your reps, sign some petitions, and be home in time for bedtime stories.<br /><br />No experience required. Scripts provided. First-timers strongly encouraged.<br /><br />RSVP in our bio.<br /><br />#DemocracyOnDraft #[YourChapterTag] #5Calls</p>
+          <div class="px-4 py-4">
+            <p class="post-text text-slate-300 text-sm leading-relaxed whitespace-pre-line">🍺 New month, new chance to make some calls.
+
+Democracy on Draft is back at [VENUE] on [DATE] at [TIME]. Grab a beer, make a few calls to your reps, sign some petitions, and be home in time for bedtime stories.
+
+No experience required. Scripts provided. First-timers strongly encouraged.
+
+RSVP in our bio.
+
+#DemocracyOnDraft #[YourChapterTag] #5Calls</p>
+          </div>
+          <div class="px-4 pb-4 pt-2 border-t border-white/5 flex items-center justify-between">
+            <div class="flex gap-4 text-slate-600 text-xs select-none">
+              <span>👍 Like</span><span>💬 Comment</span><span>↗ Share</span>
+            </div>
+            <button class="copy-btn text-xs text-sky font-bold hover:text-sky-light transition-colors">Copy Text</button>
+          </div>
         </div>
 
-        <div class="card">
-          <div class="flex justify-between items-center mb-3">
-            <span class="text-xs font-bold uppercase tracking-widest text-sky-bright">Save the Date — Issue-Forward</span>
-            <span class="text-slate-500 text-xs">3 weeks out</span>
+        <!-- Post 2 -->
+        <div class="post-card rounded-xl overflow-hidden border border-white/10" style="background: #1C2333;">
+          <div class="flex items-center gap-3 px-4 pt-4 pb-3 border-b border-white/5">
+            <div class="w-9 h-9 bg-navy-brand rounded-full flex items-center justify-center text-sky-bright font-black text-xs shrink-0">YCN</div>
+            <div class="flex-1">
+              <p class="text-white text-sm font-bold leading-tight">Your Chapter Name</p>
+              <p class="text-slate-500 text-xs">3 weeks before your event · 🌐</p>
+            </div>
+            <span class="text-xs text-sky-bright font-bold uppercase tracking-wide bg-navy px-3 py-1 rounded-full">Save the Date</span>
           </div>
-          <p class="text-slate-300 text-sm leading-relaxed">Public lands are under attack. Your representatives need to hear from you.<br /><br />Join us [DATE] at [VENUE] for Democracy on Draft — a casual evening of taking real action with your neighbors. We'll show you exactly who to call and what to say.<br /><br />Show up. Speak up. We'll have your back (and maybe a pint waiting).<br /><br />#DemocracyOnDraft #PublicLandsForAll #SaveOurForests</p>
+          <div class="px-4 py-4">
+            <p class="post-text text-slate-300 text-sm leading-relaxed whitespace-pre-line">Public lands are under attack. Your representatives need to hear from you.
+
+Join us [DATE] at [VENUE] for Democracy on Draft — a casual evening of taking real action with your neighbors. We'll show you exactly who to call and what to say.
+
+Show up. Speak up. We'll have your back (and maybe a pint waiting).
+
+#DemocracyOnDraft #PublicLandsForAll #SaveOurForests</p>
+          </div>
+          <div class="px-4 pb-4 pt-2 border-t border-white/5 flex items-center justify-between">
+            <div class="flex gap-4 text-slate-600 text-xs select-none">
+              <span>👍 Like</span><span>💬 Comment</span><span>↗ Share</span>
+            </div>
+            <button class="copy-btn text-xs text-sky font-bold hover:text-sky-light transition-colors">Copy Text</button>
+          </div>
         </div>
 
-        <div class="card">
-          <div class="flex justify-between items-center mb-3">
-            <span class="text-xs font-bold uppercase tracking-widest text-sky-bright">Reminder — What to Expect</span>
-            <span class="text-slate-500 text-xs">1 week out</span>
+        <!-- Post 3 -->
+        <div class="post-card rounded-xl overflow-hidden border border-white/10" style="background: #1C2333;">
+          <div class="flex items-center gap-3 px-4 pt-4 pb-3 border-b border-white/5">
+            <div class="w-9 h-9 bg-navy-brand rounded-full flex items-center justify-center text-sky-bright font-black text-xs shrink-0">YCN</div>
+            <div class="flex-1">
+              <p class="text-white text-sm font-bold leading-tight">Your Chapter Name</p>
+              <p class="text-slate-500 text-xs">1 week before your event · 🌐</p>
+            </div>
+            <span class="text-xs text-sky-bright font-bold uppercase tracking-wide bg-navy px-3 py-1 rounded-full">Reminder</span>
           </div>
-          <p class="text-slate-300 text-sm leading-relaxed">Wondering what Democracy on Draft is actually like? Here's the deal:<br /><br />✅ You walk in, get a beer<br />✅ We give you a bingo card with civic actions to complete<br />✅ Make a quick call (we have scripts)<br />✅ Sign a petition or two<br />✅ Hang out with neighbors who care about the same things you do<br />✅ Go home knowing you did something<br /><br />[DATE] at [VENUE].</p>
+          <div class="px-4 py-4">
+            <p class="post-text text-slate-300 text-sm leading-relaxed whitespace-pre-line">Wondering what Democracy on Draft is actually like? Here's the deal:
+
+✅ You walk in, get a beer
+✅ We give you a bingo card with civic actions to complete
+✅ Make a quick call (we have scripts)
+✅ Sign a petition or two
+✅ Hang out with neighbors who care about the same things you do
+✅ Go home knowing you did something
+
+[DATE] at [VENUE].</p>
+          </div>
+          <div class="px-4 pb-4 pt-2 border-t border-white/5 flex items-center justify-between">
+            <div class="flex gap-4 text-slate-600 text-xs select-none">
+              <span>👍 Like</span><span>💬 Comment</span><span>↗ Share</span>
+            </div>
+            <button class="copy-btn text-xs text-sky font-bold hover:text-sky-light transition-colors">Copy Text</button>
+          </div>
         </div>
 
-        <div class="card">
-          <div class="flex justify-between items-center mb-3">
-            <span class="text-xs font-bold uppercase tracking-widest text-sky-bright">Evergreen — Forest Service Cuts</span>
-            <span class="text-slate-500 text-xs">Use anytime</span>
+        <!-- Post 4 -->
+        <div class="post-card rounded-xl overflow-hidden border border-white/10" style="background: #1C2333;">
+          <div class="flex items-center gap-3 px-4 pt-4 pb-3 border-b border-white/5">
+            <div class="w-9 h-9 bg-navy-brand rounded-full flex items-center justify-center text-sky-bright font-black text-xs shrink-0">YCN</div>
+            <div class="flex-1">
+              <p class="text-white text-sm font-bold leading-tight">Your Chapter Name</p>
+              <p class="text-slate-500 text-xs">Use anytime · 🌐</p>
+            </div>
+            <span class="text-xs text-sky-bright font-bold uppercase tracking-wide bg-navy px-3 py-1 rounded-full">Evergreen</span>
           </div>
-          <p class="text-slate-300 text-sm leading-relaxed">Since early 2025, the U.S. Forest Service has lost roughly 7,500 employees through layoffs and buyouts — about a quarter of the workforce. The agency manages 193 million acres of public land, including the trails you hike, the campgrounds you camp at, and the wildfire crews that protect your community.<br /><br />This is not normal. And it's not too late.<br /><br />Take 90 seconds: 5calls.org · saveusfs.org<br /><br />#SaveOurForests #PublicLandsForAll</p>
+          <div class="px-4 py-4">
+            <p class="post-text text-slate-300 text-sm leading-relaxed whitespace-pre-line">Since early 2025, the U.S. Forest Service has lost roughly 7,500 employees through layoffs and buyouts — about a quarter of the workforce. The agency manages 193 million acres of public land, including the trails you hike, the campgrounds you camp at, and the wildfire crews that protect your community.
+
+This is not normal. And it's not too late.
+
+Take 90 seconds: 5calls.org · saveusfs.org
+
+#SaveOurForests #PublicLandsForAll</p>
+          </div>
+          <div class="px-4 pb-4 pt-2 border-t border-white/5 flex items-center justify-between">
+            <div class="flex gap-4 text-slate-600 text-xs select-none">
+              <span>👍 Like</span><span>💬 Comment</span><span>↗ Share</span>
+            </div>
+            <button class="copy-btn text-xs text-sky font-bold hover:text-sky-light transition-colors">Copy Text</button>
+          </div>
         </div>
+
       </div>
+
+      <script>
+        document.querySelectorAll('.copy-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const text = btn.closest('.post-card').querySelector('.post-text').innerText;
+            navigator.clipboard.writeText(text).then(() => {
+              btn.textContent = 'Copied!';
+              setTimeout(() => { btn.textContent = 'Copy Text'; }, 2000);
+            });
+          });
+        });
+      </script>
 
       <div class="mt-10 card">
         <h3 class="text-white font-bold mb-4">Hashtag Library</h3>
