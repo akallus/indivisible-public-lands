@@ -15,29 +15,85 @@ const chapters = [
   'Indivisible Missoula',
 ];
 ---
-<Layout title="Home" description="The FY27 markup is coming. Tools and resources for Indivisible chapters protecting America's public lands.">
+<Layout title="Home" description="A free toolkit for Indivisible chapters fighting to protect America's National Forests. Get informed, host an event, and pressure Congress — your chapter can make a difference.">
   <Nav />
 
   <!-- Hero -->
   <section class="bg-navy min-h-[90vh] flex items-center">
     <div class="max-w-6xl mx-auto px-6 py-24">
-      <p class="section-label">Indivisible Tahoe Truckee</p>
+      <p class="section-label">A Free Toolkit for Indivisible Chapters</p>
       <h1 class="text-6xl md:text-8xl font-black leading-none tracking-tight text-white mb-6">
-        Protect Our<br />National Forests
+        Your Chapter<br />Can Fight for<br />Our Forests
       </h1>
       <div class="blue-rule"></div>
-      <p class="text-xl md:text-2xl text-slate-300 max-w-3xl leading-relaxed mb-6">
-        America's National Forests belong to all of us. Since January 2025, the administration has fired thousands of Forest Service workers, proposed cutting the agency's budget by 65%, and moved to open protected lands to logging, mining, and drilling.
+      <p class="text-xl md:text-2xl text-slate-300 max-w-3xl leading-relaxed mb-4">
+        The Trump administration has fired thousands of Forest Service workers, proposed cutting the agency's budget by 65%, and moved to open protected lands to logging, mining, and drilling.
       </p>
       <p class="text-xl md:text-2xl font-bold text-white max-w-3xl mb-4">
-        The FY27 budget markup is coming. This may be our best shot at stopping the damage.
+        The FY27 budget markup is coming. This is your chapter's moment.
       </p>
       <p class="text-lg text-slate-400 max-w-3xl mb-10">
-        If we wait, the decisions get made without us.
+        We built this free toolkit so any chapter — anywhere — can take action. Get informed. Host an event. Apply pressure. Here's how.
       </p>
       <div class="flex flex-col sm:flex-row gap-4">
-        <a href="/the-problem" class="btn-primary text-lg px-10 py-5">See What's at Stake &rarr;</a>
-        <a href="/host-an-event" class="btn-outline text-lg px-10 py-5">Host an Event in Your Town</a>
+        <a href="#your-toolkit" class="btn-primary text-lg px-10 py-5">See Your Toolkit &darr;</a>
+        <a href="/the-problem" class="btn-outline text-lg px-10 py-5">Read the Full Problem</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3-Step Toolkit -->
+  <section id="your-toolkit" class="bg-navy-mid py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <p class="section-label text-center">Your Chapter's Toolkit</p>
+      <h2 class="text-3xl md:text-4xl font-black text-white text-center mb-3">Three Ways to Take Action</h2>
+      <p class="text-slate-300 text-center mb-14 max-w-2xl mx-auto">Everything on this site is free to use and adapt. Start anywhere. Every chapter has something it can do right now.</p>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Step 1 -->
+        <div class="card flex flex-col">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="bg-navy-brand text-sky-bright font-black text-2xl w-12 h-12 rounded-full flex items-center justify-center shrink-0">1</span>
+            <p class="text-sky-bright text-xs font-bold uppercase tracking-widest">Get Informed</p>
+          </div>
+          <h3 class="text-2xl font-black text-white mb-3">Know the Crisis</h3>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6 flex-1">
+            Understand exactly what's been cut, what's coming, and why it matters to your community. Brief your chapter with the facts — then pass them on.
+          </p>
+          <div class="space-y-3">
+            <a href="/the-problem" class="btn-primary w-full text-center text-sm block">The Full Problem &rarr;</a>
+            <a href="/timeline" class="btn-outline w-full text-center text-sm block">Legislative Timeline &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="card flex flex-col border border-sky/30">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="bg-sky text-white font-black text-2xl w-12 h-12 rounded-full flex items-center justify-center shrink-0">2</span>
+            <p class="text-sky-bright text-xs font-bold uppercase tracking-widest">Host an Event</p>
+          </div>
+          <h3 class="text-2xl font-black text-white mb-1">Democracy on Draft</h3>
+          <p class="text-sky-bright text-xs font-bold uppercase tracking-widest mb-3">Event Kit Available</p>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6 flex-1">
+            A casual evening at a local brewery where neighbors make calls, sign petitions, and go home knowing they did something. We have the full kit: bingo cards, social media copy, and a planning guide.
+          </p>
+          <a href="/host-an-event" class="btn-primary w-full text-center block">Get the Free Event Kit &rarr;</a>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="card flex flex-col">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="bg-navy-brand text-sky-bright font-black text-2xl w-12 h-12 rounded-full flex items-center justify-center shrink-0">3</span>
+            <p class="text-sky-bright text-xs font-bold uppercase tracking-widest">Go Further</p>
+          </div>
+          <h3 class="text-2xl font-black text-white mb-3">Actions for Your Chapter</h3>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6 flex-1">
+            Letters to the editor, banner actions at congressional offices, and direct pressure on the committee members who decide the FY27 budget. We've done it — and we'll show you how.
+          </p>
+          <a href="/get-involved" class="btn-primary w-full text-center block">See All Actions &rarr;</a>
+        </div>
+
       </div>
     </div>
   </section>
@@ -47,7 +103,7 @@ const chapters = [
     <div class="max-w-6xl mx-auto px-6">
       <p class="section-label text-center">Why It Matters</p>
       <h2 class="text-3xl md:text-4xl font-black text-white text-center mb-3">The Forest Service Is America's Backyard</h2>
-      <p class="text-slate-300 text-center mb-14 max-w-2xl mx-auto">An economic and ecological backbone of the American West — and it's under threat right now.</p>
+      <p class="text-slate-300 text-center mb-14 max-w-2xl mx-auto">193 million acres. 159 million annual visitors. An economic backbone for gateway towns across the country — and it's under threat right now.</p>
       <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
         <div class="card text-center">
           <p class="stat-number-blue">193M</p>
@@ -105,43 +161,20 @@ const chapters = [
         </div>
       </div>
       <div class="text-center">
-        <a href="/timeline" class="btn-primary">See the Full Timeline &rarr;</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Take Action -->
-  <section class="bg-navy-mid py-20">
-    <div class="max-w-6xl mx-auto px-6">
-      <p class="section-label text-center">Take Action</p>
-      <h2 class="text-3xl md:text-4xl font-black text-white text-center mb-3">Your Chapter Can Make a Difference</h2>
-      <p class="text-slate-300 text-center mb-14 max-w-2xl mx-auto">Every call, every letter, every neighbor you bring to a table with a bingo card and a beer — it adds up. Here's how to get started.</p>
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="card flex flex-col">
-          <div class="text-4xl mb-4">🍺</div>
-          <h3 class="text-2xl font-black text-white mb-1">Host an Event</h3>
-          <p class="text-sky-bright text-sm font-bold uppercase tracking-wide mb-3">Democracy on Draft</p>
-          <p class="text-slate-300 text-sm leading-relaxed mb-6 flex-1">A casual evening at your local brewery where neighbors make calls, sign petitions, write postcards, and go home knowing they did something. We have the full kit: bingo cards, social media copy, a step-by-step planning guide, and calling scripts.</p>
-          <a href="/host-an-event" class="btn-primary">Get the Event Kit &rarr;</a>
-        </div>
-        <div class="card flex flex-col">
-          <div class="text-4xl mb-4">✊</div>
-          <h3 class="text-2xl font-black text-white mb-3">Actions for Your Chapter</h3>
-          <p class="text-slate-300 text-sm leading-relaxed mb-6 flex-1">Letters to the editor, banner actions at congressional offices, connecting with partner chapters, and more. We've done it — and we'll show you how.</p>
-          <a href="/get-involved" class="btn-primary">See All Options &rarr;</a>
-        </div>
+        <a href="/the-problem" class="btn-primary">See the Full Problem &rarr;</a>
       </div>
     </div>
   </section>
 
   <!-- Who's With Us -->
-  <section class="bg-navy py-20">
+  <section class="bg-navy-mid py-20">
     <div class="max-w-6xl mx-auto px-6">
       <p class="section-label text-center">Coalition</p>
-      <h2 class="text-3xl font-black text-white text-center mb-12">Chapters Standing Together</h2>
+      <h2 class="text-3xl font-black text-white text-center mb-4">Chapters Standing Together</h2>
+      <p class="text-slate-400 text-center mb-10 text-sm max-w-xl mx-auto">These chapters joined the Indivisible Tahoe Truckee Forest Service Action meeting on May 7, 2026. Want your chapter listed?</p>
       <div class="flex flex-wrap justify-center gap-3">
         {chapters.map(chapter => (
-          <span class="bg-navy-mid border border-sky/30 text-slate-300 text-sm font-semibold px-5 py-3 rounded-full">
+          <span class="bg-navy border border-sky/30 text-slate-300 text-sm font-semibold px-5 py-3 rounded-full">
             {chapter}
           </span>
         ))}

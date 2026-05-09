@@ -171,5 +171,38 @@ import Footer from '../components/Footer.astro';
     </div>
   </section>
 
+  <!-- Relevant Articles -->
+  <section class="bg-navy-brand py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <p class="section-label">In the News</p>
+      <h2 class="text-3xl md:text-4xl font-black text-white mb-3">Relevant Coverage</h2>
+      <div class="blue-rule"></div>
+      <p class="text-slate-300 mb-10 max-w-2xl">Reporting that documents what's happening to the Forest Service. Share these with your chapter and your neighbors.</p>
+      <div class="grid md:grid-cols-2 gap-4">
+
+        <!-- NYT Article -->
+        <a href="https://www.nytimes.com/2026/04/30/climate/forest-service-labs-wildfire-research.html" target="_blank" rel="noopener" class="flex gap-4 bg-navy rounded-xl p-5 hover:border hover:border-sky/40 border border-transparent transition-all group">
+          <div class="bg-navy-mid rounded-lg w-16 h-16 shrink-0 flex items-center justify-center text-2xl">📰</div>
+          <div>
+            <p class="text-xs text-slate-500 uppercase tracking-wide mb-1">New York Times — Climate</p>
+            <p class="text-white font-bold text-sm group-hover:text-sky-light transition-colors leading-snug">Forest Service Research Labs Face Closure — Decades of Wildfire Science at Risk</p>
+            <p class="text-slate-500 text-xs mt-1">April 30, 2026 &mdash; NYT subscription may be required</p>
+          </div>
+        </a>
+
+        <!-- Sierra Sun Article -->
+        <a href="https://www.sierrasun.com/news/climate-dispatch-the-trump-administration-is-decimating-the-united-states-forest-service-dont-let-them/" target="_blank" rel="noopener" class="flex gap-4 bg-navy rounded-xl p-5 hover:border hover:border-sky/40 border border-transparent transition-all group">
+          <div class="bg-navy-mid rounded-lg w-16 h-16 shrink-0 flex items-center justify-center text-2xl">📰</div>
+          <div>
+            <p class="text-xs text-slate-500 uppercase tracking-wide mb-1">Sierra Sun</p>
+            <p class="text-white font-bold text-sm group-hover:text-sky-light transition-colors leading-snug">Climate Dispatch: The Trump Administration Is Decimating the United States Forest Service. Don't Let Them.</p>
+            <p class="text-slate-500 text-xs mt-1">Indivisible Tahoe Truckee — Published in the Sierra Sun</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
   <Footer />
 </Layout>
