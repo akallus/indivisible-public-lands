@@ -1,0 +1,194 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+
+const events = [
+  {
+    date: 'January 20, 2025',
+    title: 'Day One Executive Orders',
+    type: 'policy',
+    content: 'Trump signs "Unleashing American Energy," directing agencies to open public lands to oil, gas, coal, and mining. A separate order removes the Tongass National Forest from Roadless Rule protections. A hiring freeze across all federal agencies takes immediate effect.'
+  },
+  {
+    date: 'January 28, 2025',
+    title: 'Buyout Program Launched',
+    type: 'workforce',
+    content: 'OPM launches a "deferred resignation" program offering federal employees continued pay through September 2025 in exchange for leaving. Approximately 75,000 federal employees accept, including thousands of public lands agency workers.'
+  },
+  {
+    date: 'February 13–14, 2025',
+    title: '6,000 Forest Service Employees Fired Over Presidents\' Day Weekend',
+    type: 'workforce',
+    content: 'In a single holiday weekend, approximately 3,400 probationary Forest Service employees and 1,000 National Park Service employees are terminated. Many were hired under the Inflation Reduction Act for wildfire mitigation, trail maintenance, and conservation. Several ranger district offices are forced to temporarily close.'
+  },
+  {
+    date: 'March 2025',
+    title: 'Courts Order Reinstatement — DOGE Official Installed at Interior',
+    type: 'legal',
+    content: 'The Merit Systems Protection Board rules the mass firings were unlawful, ordering reinstatement. USDA places fired employees back on paid administrative leave. Separately, a DOGE-associated official, Tyler Hassen, is given senior authority over Interior Department reorganization, including control over funding and personnel.'
+  },
+  {
+    date: 'April 2025',
+    title: 'Interior Reorganization Announced; National Monument Reviews Begin',
+    type: 'policy',
+    content: 'Interior consolidates HR, communications, IT, and finance into centralized offices, stripping operational capacity from NPS, BLM, and Fish and Wildlife. Reports emerge that Bears Ears, Grand Staircase-Escalante, and others are under review for boundary reduction or revocation.'
+  },
+  {
+    date: 'Late April 2025',
+    title: 'FY26 Budget Proposes 65% Cut to Forest Service',
+    type: 'budget',
+    content: 'The Trump FY26 budget proposes eliminating $1.4 billion from the Forest Service — a proposed 65% cut to total FS funding, per Sen. Heinrich. The entire $283M State, Private & Tribal Forestry account is zeroed out. NPS, FWS, and BLM face a combined 35% cut.'
+  },
+  {
+    date: 'May 7, 2025',
+    title: 'House Approves Federal Land Sale Amendment',
+    type: 'legislative',
+    content: 'The House approves an amendment to the budget reconciliation bill authorizing sale of over 500,000 acres of federal lands. The provision draws immediate backlash from hunting, fishing, and outdoor recreation groups.'
+  },
+  {
+    date: 'June 2025',
+    title: 'DOJ Opinion: Presidents Can Revoke National Monuments',
+    type: 'legal',
+    content: 'The DOJ Office of Legal Counsel releases an opinion concluding presidents have authority to fully revoke national monuments under the Antiquities Act — naming Chuckwalla and Sáttítla Highlands (both California) as likely targets.'
+  },
+  {
+    date: 'June 23, 2025',
+    title: 'Roadless Rule Rescission Proposed — 44.7 Million Acres at Risk',
+    type: 'policy',
+    content: 'USDA announces intent to rescind the 2001 Roadless Area Conservation Rule, opening 44.7 million acres of National Forest System lands — including 9.3 million acres of the Tongass — to logging and road construction. Over 500,000 public comments opposing the rollback are submitted.'
+  },
+  {
+    date: 'July 4, 2025',
+    title: '"One Big Beautiful Bill" Signed — Massive Extraction Mandate',
+    type: 'legislative',
+    content: 'The budget reconciliation bill passes 51–50 (VP Vance casting the tiebreaker) and is signed on July 4. Key provisions: mandates ~80% increase in federal timber harvests; requires 4+ ANWR oil lease sales; opens 200M+ BLM acres for oil and gas leasing. The land sale provisions are stripped after widespread opposition from outdoor and hunting groups.'
+  },
+  {
+    date: 'July 8, 2025',
+    title: 'Supreme Court Clears Path for Mass Layoffs',
+    type: 'legal',
+    content: 'In an unsigned order, the Supreme Court allows the administration to proceed with Reduction in Force actions across federal agencies. Land management agencies are immediately authorized to move forward with large-scale layoffs. Justice Jackson is the sole dissenter.'
+  },
+  {
+    date: 'August 2025',
+    title: 'Wildfire Prevention Work Down 35–44%',
+    type: 'impact',
+    content: 'Forest Service prescribed burning drops to approximately 900,000 acres in 2025 — down from over 1.6 million acres in each of 2023 and 2024. The decrease is directly attributed to staff losses. Approximately 27% of wildland firefighting positions are vacant heading into fire season.'
+  },
+  {
+    date: 'September 2025',
+    title: 'Total Public Lands Workforce Down 20%',
+    type: 'workforce',
+    content: 'Combined workforce across BLM, Forest Service, NPS, and Fish and Wildlife falls to approximately 63,141 — a 20% reduction from the March 2024 level of roughly 79,070. The Conservation and Landscape Health Rule, which placed conservation on equal footing with extraction on 245M BLM acres, is proposed for rescission.'
+  },
+  {
+    date: 'October 2025',
+    title: 'BLM Announces 474 More Layoffs; ANWR Reopened for Drilling',
+    type: 'workforce',
+    content: 'BLM targets 474 additional layoffs across Oregon, Utah, California, Idaho, Arizona, and Colorado. Recreation staffing could fall by as much as 62%. Separately, BLM issues a Record of Decision formally reopening the 1.56-million-acre ANWR Coastal Plain to oil and gas leasing.'
+  },
+  {
+    date: 'April 2026',
+    title: 'Trump Administration Transfers 1.4 Million Acres to Alaska',
+    type: 'policy',
+    content: 'The administration transfers approximately 1.4 million acres of federal public land to the State of Alaska to facilitate development of the 200-mile Ambler mining road through remote wilderness.'
+  },
+  {
+    date: 'May 2026',
+    title: 'Wildfire Prevention Still Falling Short as Fire Season Begins',
+    type: 'impact',
+    content: 'NPR and public radio outlets report the Forest Service has fallen significantly behind on wildfire prevention as the 2026 fire season approaches. Prescribed burn acreage is well below targets and historical levels due to ongoing staffing losses.'
+  },
+  {
+    date: 'Now',
+    title: 'The FY27 Markup Is Coming',
+    type: 'urgent',
+    content: 'The House Interior Appropriations Subcommittee is moving the FY27 Interior, Environment, and Related Agencies bill to markup in the coming weeks. Stopping the budget for restructuring may be our best shot at halting the changes. If we wait, the decisions get made without us.'
+  },
+];
+
+const typeColors: Record<string, string> = {
+  policy: 'border-sky bg-sky/10 text-sky',
+  workforce: 'border-alert bg-alert/10 text-alert',
+  legislative: 'border-yellow-500 bg-yellow-500/10 text-yellow-400',
+  legal: 'border-purple-400 bg-purple-400/10 text-purple-300',
+  budget: 'border-alert bg-alert/10 text-alert',
+  impact: 'border-orange-400 bg-orange-400/10 text-orange-300',
+  urgent: 'border-alert bg-alert/20 text-white',
+};
+
+const typeLabels: Record<string, string> = {
+  policy: 'Policy',
+  workforce: 'Workforce',
+  legislative: 'Legislative',
+  legal: 'Legal',
+  budget: 'Budget',
+  impact: 'Impact',
+  urgent: 'URGENT',
+};
+---
+<Layout title="Timeline" description="A chronological record of what's happened to the U.S. Forest Service and public lands since January 2025.">
+  <Nav />
+
+  <!-- Hero -->
+  <section class="bg-navy py-24">
+    <div class="max-w-4xl mx-auto px-6">
+      <p class="section-label">Timeline</p>
+      <h1 class="text-5xl md:text-6xl font-black leading-none tracking-tight text-white mb-6">The Window<br />Is Closing</h1>
+      <div class="blue-rule"></div>
+      <!-- Urgency box -->
+      <div class="bg-alert/20 border border-alert rounded-xl p-6 mb-8">
+        <p class="text-white font-bold text-lg mb-2">The House Interior Appropriations Subcommittee is moving the FY27 Interior, Environment, and Related Agencies bill to markup in the coming weeks.</p>
+        <p class="text-white font-black text-xl mb-2">Stopping the budget for restructuring may be our best shot at halting the changes.</p>
+        <p class="text-slate-300">If we wait, the decisions get made without us.</p>
+        <a href="https://5calls.org" target="_blank" rel="noopener" class="inline-block mt-4 btn-red">Call Your Reps Now via 5calls.org &rarr;</a>
+      </div>
+      <p class="text-slate-300 leading-relaxed">Here is the full record of what's happened to our public lands since January 2025. Every entry is documented. Every number is sourced. This is what we're fighting to stop.</p>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section class="bg-navy-mid py-16">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="relative">
+        <!-- Vertical line -->
+        <div class="absolute left-4 md:left-6 top-0 bottom-0 w-0.5 bg-sky/30"></div>
+
+        <div class="space-y-10">
+          {events.map((event) => (
+            <div class="relative pl-12 md:pl-16">
+              <!-- Dot -->
+              <div class={`absolute left-2 md:left-4 top-2 w-4 h-4 rounded-full border-2 ${event.type === 'urgent' ? 'bg-alert border-alert' : 'bg-sky border-sky'}`}></div>
+
+              <div class={`card ${event.type === 'urgent' ? 'border border-alert' : ''}`}>
+                <div class="flex flex-wrap items-center gap-3 mb-3">
+                  <span class="text-slate-400 text-sm font-semibold">{event.date}</span>
+                  <span class={`text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded border ${typeColors[event.type]}`}>
+                    {typeLabels[event.type]}
+                  </span>
+                </div>
+                <h3 class={`font-black text-lg mb-3 ${event.type === 'urgent' ? 'text-alert' : 'text-white'}`}>{event.title}</h3>
+                <p class="text-slate-300 text-sm leading-relaxed">{event.content}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-navy py-20">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-black text-white mb-4">The pattern is clear. The window is closing.</h2>
+      <p class="text-slate-300 mb-8">Every entry on this timeline happened because Congress let it happen. The FY27 markup is the next chance to stop it.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://5calls.org" target="_blank" rel="noopener" class="btn-red">Call Your Reps &rarr;</a>
+        <a href="/host-an-event" class="btn-primary">Host an Event</a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

@@ -1,0 +1,58 @@
+---
+const currentPath = Astro.url.pathname;
+const links = [
+  { href: '/', label: 'Home' },
+  { href: '/the-problem', label: 'The Problem' },
+  { href: '/timeline', label: 'Timeline' },
+  { href: '/host-an-event', label: 'Host an Event' },
+  { href: '/get-involved', label: 'Get Involved' },
+];
+---
+<nav class="bg-navy-deep sticky top-0 z-50 border-b border-white/10">
+  <div class="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
+    <a href="/" class="flex flex-col leading-none">
+      <span class="text-xs font-bold uppercase tracking-widest text-sky-bright">Indivisible Tahoe Truckee</span>
+      <span class="text-white font-black text-base tracking-wide uppercase">Protect Public Lands</span>
+    </a>
+
+    <!-- Desktop nav -->
+    <div class="hidden md:flex items-center gap-6">
+      {links.map(link => (
+        <a
+          href={link.href}
+          class={`text-sm font-semibold transition-colors duration-150 ${currentPath === link.href ? 'text-sky-bright' : 'text-slate-300 hover:text-white'}`}
+        >
+          {link.label}
+        </a>
+      ))}
+      <a href="https://5calls.org" target="_blank" rel="noopener" class="ml-2 bg-alert text-white text-sm font-bold px-5 py-2 rounded-lg hover:opacity-90 transition-opacity">
+        Take Action
+      </a>
+    </div>
+
+    <!-- Mobile menu button -->
+    <button id="menu-toggle" class="md:hidden text-white p-2" aria-label="Open menu">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-navy-deep border-t border-white/10 px-6 pb-4">
+    {links.map(link => (
+      <a href={link.href} class="block py-3 text-sm font-semibold text-slate-300 hover:text-white border-b border-white/5">
+        {link.label}
+      </a>
+    ))}
+    <a href="https://5calls.org" target="_blank" rel="noopener" class="block mt-4 bg-alert text-white text-sm font-bold px-5 py-3 rounded-lg text-center">
+      Take Action Now
+    </a>
+  </div>
+</nav>
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+  toggle?.addEventListener('click', () => menu?.classList.toggle('hidden'));
+</script>

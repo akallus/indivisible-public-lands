@@ -1,0 +1,153 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+
+const chapters = [
+  'Indivisible Tahoe Truckee',
+  'Northern Nevada Indivisible',
+  'South Lake Tahoe Indivisible',
+  'Las Vegas Indivisible',
+  'Idaho 50501',
+  'Indivisible Durango',
+  'Indivisible Bozeman',
+  'The Mountain Pact',
+  'Indivisible Missoula',
+];
+---
+<Layout title="Home" description="The FY27 markup is coming. Tools and resources for Indivisible chapters protecting America's public lands.">
+  <Nav />
+
+  <!-- Hero -->
+  <section class="bg-navy min-h-[90vh] flex items-center">
+    <div class="max-w-6xl mx-auto px-6 py-24">
+      <p class="section-label">Indivisible Tahoe Truckee</p>
+      <h1 class="text-6xl md:text-8xl font-black leading-none tracking-tight text-white mb-6">
+        The Window<br />Is Closing
+      </h1>
+      <div class="blue-rule"></div>
+      <p class="text-xl md:text-2xl text-slate-300 max-w-3xl leading-relaxed mb-4">
+        The House Interior Appropriations Subcommittee is moving the FY27 Interior, Environment, and Related Agencies bill to markup in the coming weeks.
+      </p>
+      <p class="text-xl md:text-2xl font-bold text-white max-w-3xl mb-4">
+        Stopping the budget for restructuring may be our best shot at halting the changes.
+      </p>
+      <p class="text-lg text-slate-400 max-w-3xl mb-10">
+        If we wait, the decisions get made without us.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="/the-problem" class="btn-primary text-lg px-10 py-5">See What's at Stake &rarr;</a>
+        <a href="/host-an-event" class="btn-outline text-lg px-10 py-5">Host an Event</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why the Forest Service Matters -->
+  <section class="bg-navy-brand py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <p class="section-label text-center">Why It Matters</p>
+      <h2 class="text-3xl md:text-4xl font-black text-white text-center mb-3">The Forest Service Is America's Backyard</h2>
+      <p class="text-slate-300 text-center mb-14 max-w-2xl mx-auto">An economic and ecological backbone of the American West — and it's under threat right now.</p>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="card text-center">
+          <p class="stat-number-blue">193M</p>
+          <p class="text-white font-bold mt-2">acres managed</p>
+          <p class="text-slate-400 text-sm mt-1">National forests & grasslands across all 50 states</p>
+        </div>
+        <div class="card text-center">
+          <p class="stat-number-blue">159M</p>
+          <p class="text-white font-bold mt-2">annual visits</p>
+          <p class="text-slate-400 text-sm mt-1">Hikers, skiers, hunters, campers & more every year</p>
+        </div>
+        <div class="card text-center">
+          <p class="stat-number-blue">$13.7B</p>
+          <p class="text-white font-bold mt-2">contributed to GDP</p>
+          <p class="text-slate-400 text-sm mt-1">From visitor spending alone — supports gateway towns</p>
+        </div>
+        <div class="card text-center">
+          <p class="stat-number-blue">161K</p>
+          <p class="text-white font-bold mt-2">jobs sustained</p>
+          <p class="text-slate-400 text-sm mt-1">In communities near national forests</p>
+        </div>
+        <div class="card text-center">
+          <p class="stat-number-blue">20%</p>
+          <p class="text-white font-bold mt-2">of U.S. drinking water</p>
+          <p class="text-slate-400 text-sm mt-1">Originates on Forest Service lands</p>
+        </div>
+        <div class="card text-center">
+          <p class="stat-number-blue">11K+</p>
+          <p class="text-white font-bold mt-2">wildland firefighters</p>
+          <p class="text-slate-400 text-sm mt-1">The nation's largest federal wildfire response force</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What's Already Happened -->
+  <section class="bg-navy py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <p class="section-label">The Crisis</p>
+      <h2 class="text-3xl md:text-4xl font-black text-white mb-3">What's Already Been Done</h2>
+      <div class="blue-rule"></div>
+      <p class="text-slate-300 mb-12 max-w-2xl">Since January 2025, the administration has moved fast. Here's what's already happened — and what's still coming.</p>
+      <div class="grid md:grid-cols-3 gap-6 mb-10">
+        <div class="card border-l-4 border-alert">
+          <h3 class="text-alert font-bold text-lg mb-3">Staffing Gutted</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">Over 9,000 Forest Service employees lost through firings and buyouts — about 25% of the workforce — including local Tahoe and Plumas staff. Another 7,000 layoffs are still ahead.</p>
+        </div>
+        <div class="card border-l-4 border-alert">
+          <h3 class="text-alert font-bold text-lg mb-3">Budget Decimated</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">The FY26 budget proposes a 65% cut to total Forest Service funding — $1.4 billion in direct cuts. State, Private & Tribal Forestry funding zeroed out entirely.</p>
+        </div>
+        <div class="card border-l-4 border-alert">
+          <h3 class="text-alert font-bold text-lg mb-3">Restructuring Underway</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">HQ moving from D.C. to Salt Lake City. All 9 regional offices set to close. 57 of 77 research stations shutting down. Local decision-making power is being stripped away.</p>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="/timeline" class="btn-primary">See the Full Timeline &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Take Action -->
+  <section class="bg-navy-mid py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <p class="section-label text-center">Take Action</p>
+      <h2 class="text-3xl md:text-4xl font-black text-white text-center mb-3">Your Chapter Can Make a Difference</h2>
+      <p class="text-slate-300 text-center mb-14 max-w-2xl mx-auto">Every call, every letter, every neighbor you bring to a table with a bingo card and a beer — it adds up. Here's how to get started.</p>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="card flex flex-col">
+          <div class="text-4xl mb-4">🍺</div>
+          <h3 class="text-2xl font-black text-white mb-3">Host a Democracy on Draft Event</h3>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6 flex-1">A casual evening at your local brewery where neighbors make calls, sign petitions, write postcards, and go home knowing they did something. We have the full kit: bingo cards, social media copy, a step-by-step planning guide, and calling scripts.</p>
+          <a href="/host-an-event" class="btn-primary">Get the Event Kit &rarr;</a>
+        </div>
+        <div class="card flex flex-col">
+          <div class="text-4xl mb-4">✊</div>
+          <h3 class="text-2xl font-black text-white mb-3">Other Ways to Get Involved</h3>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6 flex-1">Letters to the editor, banner actions at congressional offices, connecting with partner chapters, and more. We've done it — and we'll show you how.</p>
+          <a href="/get-involved" class="btn-primary">See All Options &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who's With Us -->
+  <section class="bg-navy py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <p class="section-label text-center">Coalition</p>
+      <h2 class="text-3xl font-black text-white text-center mb-12">Chapters Standing Together</h2>
+      <div class="flex flex-wrap justify-center gap-3">
+        {chapters.map(chapter => (
+          <span class="bg-navy-mid border border-sky/30 text-slate-300 text-sm font-semibold px-5 py-3 rounded-full">
+            {chapter}
+          </span>
+        ))}
+      </div>
+      <p class="text-center text-slate-500 text-sm mt-8">Is your chapter involved? <a href="mailto:IndivisibleTahoeTruckee@gmail.com" class="text-sky hover:underline">Get in touch &rarr;</a></p>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

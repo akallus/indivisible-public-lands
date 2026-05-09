@@ -1,0 +1,175 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+<Layout title="The Problem" description="What's happening to the U.S. Forest Service and America's public lands — and why it matters to your community.">
+  <Nav />
+
+  <!-- Hero -->
+  <section class="bg-navy py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <p class="section-label">The Crisis</p>
+      <h1 class="text-5xl md:text-7xl font-black leading-none tracking-tight text-white mb-6">The Forest Service<br />Is in Crisis</h1>
+      <div class="blue-rule"></div>
+      <p class="text-xl text-slate-300 max-w-2xl leading-relaxed">Since January 2025, the administration has systematically dismantled one of America's most important public institutions. Here's what's at stake — and what's already been lost.</p>
+    </div>
+  </section>
+
+  <!-- Why It Matters -->
+  <section class="bg-navy-brand py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <p class="section-label">Why It Matters</p>
+      <h2 class="text-3xl md:text-4xl font-black text-white mb-3">An Economic and Ecological Backbone</h2>
+      <div class="blue-rule"></div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mt-8">
+        <div class="card text-center">
+          <p class="stat-number-blue">193M</p>
+          <p class="text-white font-bold mt-2">acres managed</p>
+          <p class="text-slate-400 text-sm mt-1">National forests & grasslands across all 50 states</p>
+        </div>
+        <div class="card text-center">
+          <p class="stat-number-blue">159M</p>
+          <p class="text-white font-bold mt-2">annual visits</p>
+          <p class="text-slate-400 text-sm mt-1">Hikers, skiers, hunters, campers & more</p>
+        </div>
+        <div class="card text-center">
+          <p class="stat-number-blue">$13.7B</p>
+          <p class="text-white font-bold mt-2">contributed to GDP</p>
+          <p class="text-slate-400 text-sm mt-1">From visitor spending alone</p>
+        </div>
+        <div class="card text-center">
+          <p class="stat-number-blue">161K</p>
+          <p class="text-white font-bold mt-2">jobs sustained</p>
+          <p class="text-slate-400 text-sm mt-1">In gateway communities near national forests</p>
+        </div>
+        <div class="card text-center">
+          <p class="stat-number-blue">20%</p>
+          <p class="text-white font-bold mt-2">of U.S. drinking water</p>
+          <p class="text-slate-400 text-sm mt-1">Originates on Forest Service lands — value est. $7.2B/year</p>
+        </div>
+        <div class="card text-center">
+          <p class="stat-number-blue">11K+</p>
+          <p class="text-white font-bold mt-2">wildland firefighters</p>
+          <p class="text-slate-400 text-sm mt-1">The nation's largest federal wildfire response force</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What's Been Cut -->
+  <section class="bg-navy py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <p class="section-label">What's Already Been Cut</p>
+      <h2 class="text-3xl md:text-4xl font-black text-white mb-3">Workforce Reductions Since January 2025</h2>
+      <div class="blue-rule"></div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mt-10">
+        <div class="card text-center">
+          <p class="stat-number-red">4,400</p>
+          <p class="text-white font-bold mt-2">probationary employees fired</p>
+          <p class="text-slate-400 text-sm mt-1">NPS & Forest Service combined, Feb 2025 — trail crews, fire support, planners</p>
+        </div>
+        <div class="card text-center">
+          <p class="stat-number-red">5,000</p>
+          <p class="text-white font-bold mt-2">more lost to buyouts</p>
+          <p class="text-slate-400 text-sm mt-1">Forest Service employees who took the "deferred resignation" offer — about 17% of the workforce</p>
+        </div>
+        <div class="card text-center">
+          <p class="stat-number-red">7,000</p>
+          <p class="text-white font-bold mt-2">additional layoffs planned</p>
+          <p class="text-slate-400 text-sm mt-1">Forces and early retirements still ahead, per E&E News</p>
+        </div>
+        <div class="card text-center">
+          <p class="stat-number-red">26%</p>
+          <p class="text-white font-bold mt-2">staffing cut proposed for FY26</p>
+          <p class="text-slate-400 text-sm mt-1">President's budget slashes the Forest Service workforce by over a quarter</p>
+        </div>
+        <div class="card text-center">
+          <p class="stat-number-red">$1.4B</p>
+          <p class="text-white font-bold mt-2">cut from FS in FY26 budget</p>
+          <p class="text-slate-400 text-sm mt-1">Direct cut to Forest Service activities and research in Trump's budget request</p>
+        </div>
+        <div class="card text-center">
+          <p class="stat-number-red">65%</p>
+          <p class="text-white font-bold mt-2">total FS funding cut proposed</p>
+          <p class="text-slate-400 text-sm mt-1">Per Sen. Heinrich (D-NM), Ranking Member, Energy & Natural Resources Committee</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What It Means on the Ground -->
+  <section class="bg-navy-mid py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <p class="section-label">Real-World Consequences</p>
+      <h2 class="text-3xl md:text-4xl font-black text-white mb-3">What This Means on the Ground</h2>
+      <div class="blue-rule"></div>
+      <div class="grid md:grid-cols-3 gap-8 mt-10">
+        <div>
+          <h3 class="text-alert font-black text-xl mb-4">Wildfire Risk</h3>
+          <p class="text-white font-bold mb-3">Less prevention. Less preparation. More fire.</p>
+          <ul class="space-y-3 text-slate-300 text-sm">
+            <li class="flex gap-2"><span class="text-alert mt-0.5">▸</span> Hazardous fuels reduction at under 50% of FY25 goal — 1.7M of 4M acres treated</li>
+            <li class="flex gap-2"><span class="text-alert mt-0.5">▸</span> Plan to spin firefighting into a new agency at Interior — a major reorg happening mid-fire season</li>
+            <li class="flex gap-2"><span class="text-alert mt-0.5">▸</span> State fire grants gutted: $76M State Capacity + $21M Volunteer Capacity eliminated</li>
+            <li class="flex gap-2"><span class="text-alert mt-0.5">▸</span> ~27% of wildland firefighting positions vacant heading into fire season</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-sky-bright font-black text-xl mb-4">Lost Institutional Capacity</h3>
+          <p class="text-white font-bold mb-3">Closed offices. Lost research. Flying blind.</p>
+          <ul class="space-y-3 text-slate-300 text-sm">
+            <li class="flex gap-2"><span class="text-sky mt-0.5">▸</span> HQ moves D.C. &rarr; Salt Lake City; all 9 regional offices set to close</li>
+            <li class="flex gap-2"><span class="text-sky mt-0.5">▸</span> 57 of 77 research stations to close across 31 states — ending decades of forest science data</li>
+            <li class="flex gap-2"><span class="text-sky mt-0.5">▸</span> Staff who can't relocate will simply resign — a brain drain of irreplaceable expertise</li>
+            <li class="flex gap-2"><span class="text-sky mt-0.5">▸</span> Local decision-making consolidated away from the communities that depend on the land</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-gold font-black text-xl mb-4">Local Costs</h3>
+          <p class="text-white font-bold mb-3">States and gateway towns left holding the bag.</p>
+          <ul class="space-y-3 text-slate-300 text-sm">
+            <li class="flex gap-2"><span class="text-gold mt-0.5">▸</span> Entire $283M State, Private & Tribal Forestry account zeroed out</li>
+            <li class="flex gap-2"><span class="text-gold mt-0.5">▸</span> Fewer rangers, trail crews, and seasonal staff — trails, campgrounds, and visitor services will degrade</li>
+            <li class="flex gap-2"><span class="text-gold mt-0.5">▸</span> The Tahoe Basin recreation economy alone supports 15,870 jobs and $1.1B in economic impact</li>
+            <li class="flex gap-2"><span class="text-gold mt-0.5">▸</span> Our neighbors and friends — local Forest Service employees — are losing their livelihoods</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why This Hits Communities Hard -->
+  <section class="bg-navy py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-3xl mx-auto">
+        <p class="section-label text-center">Why It's Personal</p>
+        <h2 class="text-3xl md:text-4xl font-black text-white text-center mb-6">Mountain and Rural Communities<br />Are on the Front Lines</h2>
+        <div class="space-y-4 mb-12">
+          <div class="card flex gap-4 items-start">
+            <span class="text-alert text-2xl font-black mt-1">01</span>
+            <p class="text-slate-300">Wildfire risk goes up when fewer hands are on the ground — and communities like ours in the Sierra Nevada are directly in harm's way.</p>
+          </div>
+          <div class="card flex gap-4 items-start">
+            <span class="text-sky-bright text-2xl font-black mt-1">02</span>
+            <p class="text-slate-300">Our local economies depend on healthy public lands and recreation access. When the Forest Service degrades, gateway towns feel it directly.</p>
+          </div>
+          <div class="card flex gap-4 items-start">
+            <span class="text-alert text-2xl font-black mt-1">03</span>
+            <p class="text-slate-300">Our neighbors and friends are losing their jobs. Forest Service employees in the Tahoe and Plumas National Forests have been hit hard.</p>
+          </div>
+          <div class="card flex gap-4 items-start">
+            <span class="text-sky-bright text-2xl font-black mt-1">04</span>
+            <p class="text-slate-300">Watersheds, wildlife, and the places we love suffer when stewardship is gutted. These are losses we can't undo.</p>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="/timeline" class="btn-primary mr-4">See the Full Timeline &rarr;</a>
+          <a href="/host-an-event" class="btn-outline mt-4 sm:mt-0">Take Action</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

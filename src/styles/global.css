@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-navy text-white font-sans;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-block bg-sky text-white font-bold px-8 py-4 rounded-lg hover:bg-sky-light transition-colors duration-200 text-center;
+  }
+  .btn-outline {
+    @apply inline-block border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-navy transition-colors duration-200 text-center;
+  }
+  .btn-red {
+    @apply inline-block bg-alert text-white font-bold px-8 py-4 rounded-lg hover:opacity-90 transition-opacity duration-200 text-center;
+  }
+  .section-label {
+    @apply text-sky-bright text-xs font-bold uppercase tracking-widest mb-3;
+  }
+  .blue-rule {
+    @apply w-12 h-1 bg-sky mb-6;
+  }
+  .card {
+    @apply bg-navy-mid rounded-xl p-8;
+  }
+  .stat-number-red {
+    @apply text-5xl md:text-6xl font-black text-alert leading-none;
+  }
+  .stat-number-blue {
+    @apply text-5xl md:text-6xl font-black text-sky-bright leading-none;
+  }
+}
