@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="6" fill="#0D1B2A"/>
+  <!-- trunk -->
+  <rect x="14" y="22" width="4" height="6" fill="#4ade80"/>
+  <!-- bottom tier -->
+  <polygon points="16,10 24,22 8,22" fill="#16a34a"/>
+  <!-- middle tier -->
+  <polygon points="16,5 23,17 9,17" fill="#22c55e"/>
+  <!-- top tier -->
+  <polygon points="16,2 21,12 11,12" fill="#4ade80"/>
+</svg>
