@@ -1,0 +1,99 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+<Layout title="The Script" description="A calling script for contacting your member of Congress about the Forest Service. Adapted from South Lake Tahoe Indivisible.">
+  <Nav />
+
+  <!-- Hero -->
+  <section class="bg-navy py-24">
+    <div class="max-w-4xl mx-auto px-6">
+      <p class="section-label">Take Action</p>
+      <h1 class="text-5xl md:text-7xl font-black leading-none tracking-tight text-white mb-6">The Script</h1>
+      <div class="blue-rule"></div>
+      <p class="text-xl text-slate-300 max-w-2xl leading-relaxed mt-6">Calling your member of Congress is the single most effective thing you can do. It takes about two minutes. Here's exactly what to say.</p>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="bg-navy-mid py-12">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-6 mb-4">
+        <div class="card text-center">
+          <p class="text-sky-bright font-black text-2xl mb-2">1</p>
+          <p class="text-white font-bold mb-1">Find your rep</p>
+          <p class="text-slate-400 text-sm">Go to <a href="https://5calls.org" target="_blank" rel="noopener" class="text-sky hover:underline">5calls.org</a> and enter your zip code to get your representative's office phone number.</p>
+        </div>
+        <div class="card text-center">
+          <p class="text-sky-bright font-black text-2xl mb-2">2</p>
+          <p class="text-white font-bold mb-1">Call the office</p>
+          <p class="text-slate-400 text-sm">You'll likely reach a staffer or voicemail. Both count. Read the script below — it's short.</p>
+        </div>
+        <div class="card text-center">
+          <p class="text-sky-bright font-black text-2xl mb-2">3</p>
+          <p class="text-white font-bold mb-1">Log your call</p>
+          <p class="text-slate-400 text-sm">5calls.org tracks your calls. Every logged call adds to the pressure Congress feels from constituents.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Script -->
+  <section class="bg-navy py-16">
+    <div class="max-w-3xl mx-auto px-6">
+      <p class="section-label">The Script</p>
+      <h2 class="text-3xl font-black text-white mb-8">What to Say</h2>
+
+      <!-- Script card -->
+      <div class="bg-navy-mid rounded-2xl border border-sky/30 p-8 mb-10">
+        <p class="text-xs font-bold uppercase tracking-widest text-sky-bright mb-6">Read this aloud — or use it as a guide</p>
+
+        <div class="space-y-5 text-slate-200 leading-relaxed text-base">
+          <p>"Hi, my name is <span class="bg-navy rounded px-2 py-0.5 text-white font-bold">[your name]</span> and I'm a constituent from <span class="bg-navy rounded px-2 py-0.5 text-white font-bold">[your city]</span>."</p>
+
+          <p>"I'm calling to urge Representative <span class="bg-navy rounded px-2 py-0.5 text-white font-bold">[representative's name]</span> to oppose the dismantling of the U.S. Forest Service."</p>
+
+          <p>"The administration has fired thousands of Forest Service workers, proposed a 65% budget cut, and is moving forward with an illegal restructuring that would close all nine regional offices and shut down 57 of 77 research stations."</p>
+
+          <p>"I'm also asking the Representative to oppose the use of glyphosate in our national forests. This herbicide threatens our watersheds, our wildlife, and the communities that depend on clean water from Forest Service lands."</p>
+
+          <p>"The Forest Service manages 193 million acres of public land and supplies drinking water to one in five Americans. We can't afford to gut this agency."</p>
+
+          <p>"Please oppose the FY27 budget cuts to the Forest Service and demand a halt to the restructuring. Will the Representative take a stand on this?"</p>
+
+          <p>"Thank you for your time."</p>
+        </div>
+      </div>
+
+      <!-- Tips -->
+      <div class="space-y-4 mb-10">
+        <h3 class="text-white font-black text-xl">Tips</h3>
+        <div class="space-y-3 text-slate-300 text-sm">
+          <div class="flex gap-3 items-start">
+            <span class="text-sky-bright shrink-0 font-bold">→</span>
+            <p><span class="text-white font-bold">Voicemail is fine.</span> Staffers tally voicemails just like live calls. Don't hang up — leave the message.</p>
+          </div>
+          <div class="flex gap-3 items-start">
+            <span class="text-sky-bright shrink-0 font-bold">→</span>
+            <p><span class="text-white font-bold">Make it personal.</span> Add one line about your local connection — where you hike, the trail you love, the watershed your town depends on.</p>
+          </div>
+          <div class="flex gap-3 items-start">
+            <span class="text-sky-bright shrink-0 font-bold">→</span>
+            <p><span class="text-white font-bold">You don't need to know everything.</span> You just need to show up and be counted as a constituent who cares.</p>
+          </div>
+          <div class="flex gap-3 items-start">
+            <span class="text-sky-bright shrink-0 font-bold">→</span>
+            <p><span class="text-white font-bold">Call more than once.</span> Volume matters. Call every few weeks while this fight is ongoing.</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="https://5calls.org" target="_blank" rel="noopener" class="btn-primary text-lg px-10 py-5 inline-block">Find Your Rep at 5calls.org &rarr;</a>
+
+      <p class="text-slate-500 text-xs mt-10">Script adapted from materials developed by <strong class="text-slate-400">South Lake Tahoe Indivisible</strong>. Thank you for your work.</p>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
