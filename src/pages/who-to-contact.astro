@@ -22,66 +22,38 @@ import Footer from '../components/Footer.astro';
       <!-- Call Your Reps -->
       <div>
         <p class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-5 border-b border-white/10 pb-3">Step 1 — Call Your Representatives</p>
-        <div class="space-y-4">
 
-          <div class="card border border-sky/40">
-            <div class="flex items-start justify-between gap-4 flex-wrap">
-              <div>
-                <p class="text-sky-bright font-black text-xl mb-1">Capitol Switchboard</p>
-                <p class="text-white font-bold text-3xl mb-3"><a href="tel:+12022243121" class="hover:text-sky transition-colors">(202) 224-3121</a></p>
-                <p class="text-slate-300 text-sm">Works for everyone in the country. Call and ask to be connected to your senator's or representative's office by name.</p>
-              </div>
-              <a href="tel:+12022243121" class="btn-primary text-sm shrink-0">Call Now &rarr;</a>
-            </div>
+        <!-- Zip lookup -->
+        <div class="card border border-sky/40 mb-4">
+          <p class="text-white font-black text-lg mb-1">Find Your Reps by Zip Code</p>
+          <p class="text-slate-400 text-sm mb-5">Enter your zip code and we'll show your two senators and your House representative with direct phone numbers.</p>
+          <div class="flex gap-3 flex-wrap">
+            <input
+              id="zip-input"
+              type="text"
+              inputmode="numeric"
+              maxlength="5"
+              placeholder="Enter zip code"
+              class="bg-navy border border-white/20 rounded-lg px-4 py-3 text-white placeholder-slate-500 text-sm font-semibold w-40 focus:outline-none focus:border-sky"
+            />
+            <button
+              id="zip-btn"
+              class="btn-primary text-sm px-6 py-3"
+            >Find My Reps &rarr;</button>
           </div>
-
-          <div class="card">
-            <p class="text-white font-bold mb-2">Don't know your reps?</p>
-            <p class="text-slate-300 text-sm mb-4">Look them up by zip code — you'll get names, direct numbers, and office info.</p>
-            <a href="https://www.congress.gov/members/find-your-member" target="_blank" rel="noopener" class="btn-outline text-sm inline-block">Find Your Rep at congress.gov &rarr;</a>
-          </div>
-
+          <div id="zip-error" class="hidden mt-3 text-alert text-sm font-semibold"></div>
+          <div id="zip-loading" class="hidden mt-5 text-slate-400 text-sm">Looking up your representatives...</div>
+          <div id="zip-results" class="hidden mt-6 space-y-4"></div>
         </div>
-      </div>
 
-      <!-- California example -->
-      <div>
-        <p class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-5 border-b border-white/10 pb-3">Example: California (Tahoe-Truckee Area)</p>
-        <div class="space-y-4">
-
-          <div class="card">
-            <div class="flex items-start justify-between gap-4 flex-wrap">
-              <div>
-                <p class="text-sky-bright font-black text-xl mb-1">Sen. Adam Schiff</p>
-                <p class="text-white font-bold text-2xl mb-3"><a href="tel:+12022243841" class="hover:text-sky transition-colors">(202) 224-3841</a></p>
-                <p class="text-slate-400 text-sm">Leave your name, phone number, CA zip code, and email.</p>
-              </div>
-              <a href="tel:+12022243841" class="btn-primary text-sm shrink-0">Call &rarr;</a>
-            </div>
+        <!-- Fallback -->
+        <div class="card">
+          <p class="text-white font-bold mb-1">Or call the Capitol Switchboard</p>
+          <p class="text-slate-400 text-sm mb-3">Works for everyone. Ask to be connected to your senator's or representative's office by name.</p>
+          <div class="flex items-center gap-4 flex-wrap">
+            <a href="tel:+12022243121" class="text-white font-black text-xl hover:text-sky transition-colors">(202) 224-3121</a>
+            <a href="tel:+12022243121" class="btn-outline text-sm">Call &rarr;</a>
           </div>
-
-          <div class="card">
-            <div class="flex items-start justify-between gap-4 flex-wrap">
-              <div>
-                <p class="text-sky-bright font-black text-xl mb-1">Sen. Alex Padilla</p>
-                <p class="text-white font-bold text-2xl mb-3"><a href="tel:+19164482787" class="hover:text-sky transition-colors">(916) 448-2787</a></p>
-                <p class="text-slate-400 text-sm">Leave your name and zip code.</p>
-              </div>
-              <a href="tel:+19164482787" class="btn-primary text-sm shrink-0">Call &rarr;</a>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="flex items-start justify-between gap-4 flex-wrap">
-              <div>
-                <p class="text-sky-bright font-black text-xl mb-1">Rep. Kevin Kiley</p>
-                <p class="text-white font-bold text-2xl mb-3"><a href="tel:+12022252523" class="hover:text-sky transition-colors">(202) 225-2523</a></p>
-                <p class="text-slate-400 text-sm">Press 1. Leave your name, email, and phone number.</p>
-              </div>
-              <a href="tel:+12022252523" class="btn-primary text-sm shrink-0">Call &rarr;</a>
-            </div>
-          </div>
-
         </div>
       </div>
 
@@ -93,7 +65,7 @@ import Footer from '../components/Footer.astro';
           <div class="card">
             <div class="flex items-start justify-between gap-4 flex-wrap">
               <div>
-                <p class="text-sky-bright font-black text-xl mb-1">4. Change.org — Stop Glyphosate</p>
+                <p class="text-sky-bright font-black text-xl mb-1">Stop Glyphosate Spraying</p>
                 <p class="text-slate-300 text-sm mt-1">Sign the petition against glyphosate spraying in our national forests.</p>
               </div>
               <a href="https://www.change.org/p/stop-glyphosate-spraying-in-the-tahoe-basin" target="_blank" rel="noopener" class="btn-primary text-sm shrink-0">Sign &rarr;</a>
@@ -103,7 +75,7 @@ import Footer from '../components/Footer.astro';
           <div class="card">
             <div class="flex items-start justify-between gap-4 flex-wrap">
               <div>
-                <p class="text-sky-bright font-black text-xl mb-1">5. Change.org — Stop the Restructuring</p>
+                <p class="text-sky-bright font-black text-xl mb-1">Stop the Restructuring</p>
                 <p class="text-slate-300 text-sm mt-1">Sign the petition against illegal Forest Service restructuring.</p>
               </div>
               <a href="https://www.change.org/p/don-t-destroy-the-agency-that-protects-america-s-public-lands" target="_blank" rel="noopener" class="btn-primary text-sm shrink-0">Sign &rarr;</a>
@@ -113,7 +85,7 @@ import Footer from '../components/Footer.astro';
         </div>
       </div>
 
-      <!-- Speak Up Beyond the Call Sheet -->
+      <!-- Speak Up Beyond the Call -->
       <div>
         <p class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-5 border-b border-white/10 pb-3">Step 3 — Speak Up Beyond the Call</p>
         <div class="space-y-4">
@@ -121,7 +93,7 @@ import Footer from '../components/Footer.astro';
           <div class="card">
             <div class="flex items-start justify-between gap-4 flex-wrap">
               <div>
-                <p class="text-sky-bright font-black text-xl mb-1">6. Tell Outdoor Brands to Speak Out</p>
+                <p class="text-sky-bright font-black text-xl mb-1">Tell Outdoor Brands to Speak Out</p>
                 <p class="text-slate-300 text-sm mt-1 mb-3">Pressure outdoor companies to use their platforms to defend our public lands.</p>
                 <a href="https://saveusfs.org" target="_blank" rel="noopener" class="text-sky font-bold text-sm hover:underline">saveusfs.org &rarr;</a>
               </div>
@@ -130,12 +102,8 @@ import Footer from '../components/Footer.astro';
           </div>
 
           <div class="card">
-            <div class="flex items-start justify-between gap-4 flex-wrap">
-              <div>
-                <p class="text-sky-bright font-black text-xl mb-1">7. Write a Postcard to a Boise Voter</p>
-                <p class="text-slate-300 text-sm mt-1">Ask a Boise voter to call Rep. Mike Simpson (ID-02) about Forest Service cuts. Simpson chairs the House Interior Appropriations Subcommittee — constituent pressure matters.</p>
-              </div>
-            </div>
+            <p class="text-sky-bright font-black text-xl mb-2">Write a Postcard to a Boise Voter</p>
+            <p class="text-slate-300 text-sm">Ask a Boise voter to call Rep. Mike Simpson (ID-02) about Forest Service cuts. Simpson chairs the House Interior Appropriations Subcommittee — constituent pressure matters.</p>
           </div>
 
         </div>
@@ -146,3 +114,78 @@ import Footer from '../components/Footer.astro';
 
   <Footer />
 </Layout>
+
+<script>
+  const btn = document.getElementById('zip-btn') as HTMLButtonElement;
+  const input = document.getElementById('zip-input') as HTMLInputElement;
+  const results = document.getElementById('zip-results') as HTMLDivElement;
+  const loading = document.getElementById('zip-loading') as HTMLDivElement;
+  const error = document.getElementById('zip-error') as HTMLDivElement;
+
+  function repCard(name: string, phone: string, party: string, title: string): string {
+    const tel = phone.replace(/\D/g, '');
+    const partyColor = party === 'D' ? 'text-sky-bright' : party === 'R' ? 'text-alert' : 'text-slate-400';
+    return `
+      <div class="bg-navy rounded-xl p-5 border border-white/10">
+        <div class="flex items-start justify-between gap-4 flex-wrap">
+          <div>
+            <p class="text-xs font-bold uppercase tracking-widest ${partyColor} mb-1">${title}</p>
+            <p class="text-white font-black text-lg mb-1">${name}</p>
+            <p class="text-white font-bold text-xl"><a href="tel:+1${tel}" class="hover:text-sky transition-colors">${phone}</a></p>
+          </div>
+          <a href="tel:+1${tel}" class="btn-primary text-sm shrink-0">Call &rarr;</a>
+        </div>
+      </div>`;
+  }
+
+  async function lookup() {
+    const zip = input.value.trim();
+    if (!/^\d{5}$/.test(zip)) {
+      error.textContent = 'Please enter a valid 5-digit zip code.';
+      error.classList.remove('hidden');
+      return;
+    }
+    error.classList.add('hidden');
+    results.classList.add('hidden');
+    loading.classList.remove('hidden');
+
+    try {
+      const res = await fetch(`https://whoismyrepresentative.com/getall_mems.php?zip=${zip}&output=json`);
+      const data = await res.json();
+      loading.classList.add('hidden');
+
+      if (!data.results || data.results.length === 0) {
+        error.textContent = 'No representatives found for that zip code. Try the Capitol Switchboard below.';
+        error.classList.remove('hidden');
+        return;
+      }
+
+      const senators = data.results.filter((r: any) => r.title?.includes('Senator') || r.chamber === 'senate');
+      const reps = data.results.filter((r: any) => !r.title?.includes('Senator') && r.chamber !== 'senate');
+
+      let html = '';
+      if (senators.length) {
+        html += `<p class="text-xs font-bold uppercase tracking-widest text-slate-500 pb-2 border-b border-white/10 mb-3">Your Senators</p>`;
+        senators.forEach((s: any) => {
+          html += repCard(s.name, s.phone, s.party, 'U.S. Senator');
+        });
+      }
+      if (reps.length) {
+        html += `<p class="text-xs font-bold uppercase tracking-widest text-slate-500 pb-2 border-b border-white/10 mb-3 mt-5">Your Representative</p>`;
+        reps.forEach((r: any) => {
+          html += repCard(r.name, r.phone, r.party, `${r.district || 'U.S. Representative'}`);
+        });
+      }
+
+      results.innerHTML = html;
+      results.classList.remove('hidden');
+    } catch (e) {
+      loading.classList.add('hidden');
+      error.textContent = 'Something went wrong. Try the Capitol Switchboard below.';
+      error.classList.remove('hidden');
+    }
+  }
+
+  btn.addEventListener('click', lookup);
+  input.addEventListener('keydown', (e) => { if (e.key === 'Enter') lookup(); });
+</script>
