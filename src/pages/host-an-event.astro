@@ -81,36 +81,79 @@ import Footer from '../components/Footer.astro';
   </section>
 
   <!-- Downloads -->
-  <section id="downloads" class="bg-navy-brand py-20">
-    <div class="max-w-6xl mx-auto px-6">
-      <p class="section-label text-center">Free Downloads</p>
-      <h2 class="text-3xl md:text-4xl font-black text-white text-center mb-3">Everything You Need</h2>
-      <p class="text-slate-300 text-center mb-12 max-w-xl mx-auto">Download, print, and use. All materials are free to adapt and share.</p>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="card flex flex-col">
-          <div class="text-4xl mb-4">🎯</div>
-          <h3 class="text-white font-black text-xl mb-2">Bingo Card</h3>
-          <p class="text-slate-300 text-sm mb-6 flex-1">One per attendee. 16 civic actions including calling your senator, signing petitions, writing a postcard, and tagging an outdoor brand. Print 50–75 per event.</p>
-          <a href="/downloads/Democracy_on_Draft_Bingo_Card.pdf" download class="btn-primary text-sm">Download PDF &darr;</a>
+  <section id="downloads" class="bg-navy-mid py-20">
+    <div class="max-w-4xl mx-auto px-6">
+      <p class="section-label">Free Kit</p>
+      <h2 class="text-3xl md:text-4xl font-black text-white mb-3">Your Event Assets</h2>
+      <div class="blue-rule"></div>
+      <p class="text-slate-300 mt-6 mb-12 max-w-xl">Everything your chapter needs to run a Democracy on Draft event. Download, print, and use freely.</p>
+
+      <div class="space-y-5">
+
+        <!-- Event Poster -->
+        <div class="card flex flex-col sm:flex-row gap-6 items-start">
+          <div class="bg-navy rounded-xl flex items-center justify-center shrink-0 text-4xl w-20 h-20">🎨</div>
+          <div class="flex-1">
+            <p class="text-xs font-bold uppercase tracking-widest text-sky-bright mb-1">Promote Your Event</p>
+            <h3 class="text-white font-black text-xl mb-1">Event Poster — Canva Template</h3>
+            <p class="text-slate-300 text-sm mb-4">A customizable poster for your event. Edit the date, time, and venue in Canva — no design skills needed. Download and print, or share digitally.</p>
+            <a href="https://canva.link/duya6yh39ku28tz" target="_blank" rel="noopener" class="btn-primary text-sm inline-block">Open in Canva &rarr;</a>
+          </div>
         </div>
-        <div class="card flex flex-col">
-          <div class="text-4xl mb-4">📱</div>
-          <h3 class="text-white font-black text-xl mb-2">Social Media Copy</h3>
-          <p class="text-slate-300 text-sm mb-6 flex-1">A full library of caption templates, post copy, and hashtags. Organized by timing (save the date, reminder, day-of, recap) with playful, urgent, and newcomer-friendly variants.</p>
-          <a href="#social-copy" class="btn-primary text-sm">View Copy &darr;</a>
+
+        <!-- Act From Your Phone -->
+        <div class="card flex flex-col sm:flex-row gap-6 items-start">
+          <div class="bg-navy rounded-xl flex items-center justify-center shrink-0 text-4xl w-20 h-20">📱</div>
+          <div class="flex-1">
+            <p class="text-xs font-bold uppercase tracking-widest text-sky-bright mb-1">Handout for Attendees</p>
+            <h3 class="text-white font-black text-xl mb-1">Act From Your Phone</h3>
+            <p class="text-slate-300 text-sm mb-4">A one-page list of actions attendees can take using only their cell phone — no laptop needed. Print one per table or share the link on the night.</p>
+            <a href="/downloads/act-from-your-phone.pdf" download class="btn-primary text-sm inline-block">Download PDF &darr;</a>
+          </div>
         </div>
-        <div class="card flex flex-col">
-          <div class="text-4xl mb-4">📋</div>
-          <h3 class="text-white font-black text-xl mb-2">Planning Guide</h3>
-          <p class="text-slate-300 text-sm mb-6 flex-1">A complete step-by-step playbook — venue selection, volunteer roles, promotion timeline, run of show, and troubleshooting. Everything you need from 6 weeks out to post-event.</p>
-          <a href="#planning-guide" class="btn-primary text-sm">Read the Guide &darr;</a>
+
+        <!-- Table Tent -->
+        <div class="card flex flex-col sm:flex-row gap-6 items-start">
+          <div class="bg-navy rounded-xl flex items-center justify-center shrink-0 text-4xl w-20 h-20">🌲</div>
+          <div class="flex-1">
+            <p class="text-xs font-bold uppercase tracking-widest text-sky-bright mb-1">Print for Tables</p>
+            <h3 class="text-white font-black text-xl mb-1">Table Tent</h3>
+            <p class="text-slate-300 text-sm mb-4">A printable table tent — "Protect Our Forests / Indivisible Tahoe Truckee." Print on standard 8.5×11, fold in half, and stand on each table. Open in your browser and use your browser's Print function.</p>
+            <a href="/downloads/table-tent.html" target="_blank" class="btn-primary text-sm inline-block">Open &amp; Print &rarr;</a>
+          </div>
         </div>
+
+        <!-- Bingo Card -->
+        <div class="card flex flex-col sm:flex-row gap-6 items-start">
+          <div class="bg-navy rounded-xl flex items-center justify-center shrink-0 text-4xl w-20 h-20">🎯</div>
+          <div class="flex-1">
+            <p class="text-xs font-bold uppercase tracking-widest text-sky-bright mb-1">Activity for Attendees</p>
+            <h3 class="text-white font-black text-xl mb-1">Bingo Card</h3>
+            <p class="text-slate-300 text-sm mb-4">One per attendee. 16 civic actions including calling your senator, signing petitions, writing a postcard, and tagging an outdoor brand. Print 50–75 per event.</p>
+            <div class="flex gap-3 flex-wrap">
+              <a href="/downloads/Democracy_on_Draft_Bingo_Card.pdf" download class="btn-primary text-sm inline-block">Download PDF &darr;</a>
+              <a href="#bingo-preview" class="btn-outline text-sm inline-block">Preview &darr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Media Copy -->
+        <div class="card flex flex-col sm:flex-row gap-6 items-start">
+          <div class="bg-navy rounded-xl flex items-center justify-center shrink-0 text-4xl w-20 h-20">📣</div>
+          <div class="flex-1">
+            <p class="text-xs font-bold uppercase tracking-widest text-sky-bright mb-1">Promote Online</p>
+            <h3 class="text-white font-black text-xl mb-1">Social Media Copy</h3>
+            <p class="text-slate-300 text-sm mb-4">Ready-to-use post copy for before, during, and after the event. Copy with one click and adapt for your chapter.</p>
+            <a href="#social-copy" class="btn-primary text-sm inline-block">View Copy &darr;</a>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
   <!-- Bingo Card Preview -->
-  <section class="bg-navy py-16">
+  <section id="bingo-preview" class="bg-navy py-16">
     <div class="max-w-3xl mx-auto px-6">
       <p class="section-label text-center">Preview</p>
       <h2 class="text-2xl font-black text-white text-center mb-8">The Bingo Card</h2>
