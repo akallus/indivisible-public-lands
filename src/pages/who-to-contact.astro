@@ -17,16 +17,22 @@ import Footer from '../components/Footer.astro';
   </section>
 
   <section class="bg-navy-mid py-16">
-    <div class="max-w-3xl mx-auto px-6 space-y-12">
+    <div class="max-w-3xl mx-auto px-6 space-y-16">
 
-      <!-- Call Your Reps -->
+      <!-- Step 1: Call -->
       <div>
-        <p class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-5 border-b border-white/10 pb-3">Step 1 — Call Your Representatives</p>
+        <div class="flex gap-4 items-center mb-6">
+          <span class="text-sky-bright font-black text-4xl leading-none">1</span>
+          <div>
+            <h2 class="text-white font-black text-2xl leading-tight">Call Your Senators and Representative</h2>
+            <p class="text-slate-400 text-sm mt-1">Constituent calls are the most effective thing you can do. It takes 2 minutes.</p>
+          </div>
+        </div>
 
         <!-- Zip lookup -->
         <div class="card border border-sky/40 mb-4">
           <p class="text-white font-black text-lg mb-1">Find Your Reps by Zip Code</p>
-          <p class="text-slate-400 text-sm mb-5">Enter your zip code and we'll show your two senators and your House representative with direct phone numbers.</p>
+          <p class="text-slate-400 text-sm mb-5">Enter your zip code to get your two senators and your House representative with direct phone numbers.</p>
           <div class="flex gap-3 flex-wrap">
             <input
               id="zip-input"
@@ -46,10 +52,16 @@ import Footer from '../components/Footer.astro';
           <div id="zip-results" class="hidden mt-6 space-y-4"></div>
         </div>
 
-        <!-- Fallback -->
+        <!-- Script link -->
+        <div class="bg-navy rounded-xl px-5 py-4 border border-white/10 flex items-center justify-between gap-4 flex-wrap mb-4">
+          <p class="text-slate-300 text-sm">Not sure what to say? We have a script ready for you.</p>
+          <a href="/the-script" class="text-sky font-bold text-sm hover:underline shrink-0">Read the Script &rarr;</a>
+        </div>
+
+        <!-- Fallback switchboard -->
         <div class="card">
           <p class="text-white font-bold mb-1">Or call the Capitol Switchboard</p>
-          <p class="text-slate-400 text-sm mb-3">Works for everyone. Ask to be connected to your senator's or representative's office by name.</p>
+          <p class="text-slate-400 text-sm mb-3">Ask to be connected to your senator's or representative's office by name.</p>
           <div class="flex items-center gap-4 flex-wrap">
             <a href="tel:+12022243121" class="text-white font-black text-xl hover:text-sky transition-colors">(202) 224-3121</a>
             <a href="tel:+12022243121" class="btn-outline text-sm">Call &rarr;</a>
@@ -57,9 +69,15 @@ import Footer from '../components/Footer.astro';
         </div>
       </div>
 
-      <!-- Sign Petitions -->
+      <!-- Step 2: Petitions -->
       <div>
-        <p class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-5 border-b border-white/10 pb-3">Step 2 — Sign Petitions</p>
+        <div class="flex gap-4 items-center mb-6">
+          <span class="text-sky-bright font-black text-4xl leading-none">2</span>
+          <div>
+            <h2 class="text-white font-black text-2xl leading-tight">Sign Petitions</h2>
+            <p class="text-slate-400 text-sm mt-1">Add your name to the record on both key issues.</p>
+          </div>
+        </div>
         <div class="space-y-4">
 
           <div class="card border border-sky/30">
@@ -77,9 +95,15 @@ import Footer from '../components/Footer.astro';
         </div>
       </div>
 
-      <!-- Speak Up Beyond the Call -->
+      <!-- Step 3: Speak Up -->
       <div>
-        <p class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-5 border-b border-white/10 pb-3">Step 3 — Speak Up Beyond the Call</p>
+        <div class="flex gap-4 items-center mb-6">
+          <span class="text-sky-bright font-black text-4xl leading-none">3</span>
+          <div>
+            <h2 class="text-white font-black text-2xl leading-tight">Speak Up Beyond the Call</h2>
+            <p class="text-slate-400 text-sm mt-1">More ways to apply pressure and spread the word.</p>
+          </div>
+        </div>
         <div class="space-y-4">
 
           <div class="card border border-sky/30">
