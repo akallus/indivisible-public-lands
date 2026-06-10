@@ -1,0 +1,64 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+<Layout title="Upcoming Events" description="Upcoming Indivisible Tahoe Truckee events — banner actions, calling nights, and more ways to protect the Forest Service.">
+  <Nav />
+
+  <!-- Hero -->
+  <section class="bg-navy py-24">
+    <div class="max-w-4xl mx-auto px-6">
+      <p class="section-label">Get Involved</p>
+      <h1 class="text-5xl md:text-7xl font-black leading-none tracking-tight text-white mb-6">Upcoming<br />Events</h1>
+      <div class="blue-rule"></div>
+      <p class="text-xl text-slate-300 max-w-2xl leading-relaxed mt-6">Show up. Every person who comes out makes our voice louder.</p>
+    </div>
+  </section>
+
+  <!-- Events -->
+  <section class="bg-navy-mid py-16">
+    <div class="max-w-4xl mx-auto px-6 space-y-8">
+
+      <!-- June 14 Banner Action -->
+      <div class="card flex flex-col md:flex-row gap-8 items-start">
+        <img
+          src="/images/banner-action-june14-truckee-overpass.jpg"
+          alt="Event flyer: Bannering and sign waving at Truckee Way Overpass, Sunday June 14, 11am–12pm"
+          class="w-full md:w-56 rounded-xl object-cover shrink-0"
+        />
+        <div class="flex-1">
+          <div class="flex items-center gap-3 mb-3 flex-wrap">
+            <span class="bg-alert text-white text-xs font-black uppercase tracking-widest px-3 py-1 rounded-full">Upcoming</span>
+            <span class="text-slate-400 text-sm font-semibold">Sunday, June 14, 2026</span>
+          </div>
+          <h2 class="text-white font-black text-2xl md:text-3xl mb-1">Banner Action — Truckee Way Overpass</h2>
+          <p class="text-sky-bright font-bold mb-4">11am – 12pm &nbsp;·&nbsp; Truckee, CA</p>
+          <p class="text-slate-300 text-sm leading-relaxed mb-3">Join us for a peaceful bannering and sign-waving action at the Truckee Way Overpass (between Jibboom &amp; Pioneer Trail over I-80). We'll be holding signs on two key issues:</p>
+          <div class="space-y-2 mb-5">
+            <div class="flex gap-3 items-center bg-navy rounded-lg px-4 py-3">
+              <span class="text-alert font-black shrink-0">✕</span>
+              <p class="text-white font-bold text-sm">No Glyphosate</p>
+            </div>
+            <div class="flex gap-3 items-center bg-navy rounded-lg px-4 py-3">
+              <span class="text-sky-bright font-black shrink-0">✓</span>
+              <p class="text-white font-bold text-sm">Save the Forest Service</p>
+            </div>
+          </div>
+          <p class="text-slate-500 text-xs">Peaceful demonstration · Share sidewalks · Do not block traffic</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- More events CTA -->
+  <section class="bg-navy py-16">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <p class="text-slate-400 text-sm mb-2">Want to stay in the loop on future events?</p>
+      <a href="mailto:IndivisibleTahoeTruckee@gmail.com" class="text-sky font-bold hover:underline">IndivisibleTahoeTruckee@gmail.com</a>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
